@@ -1,0 +1,269 @@
+/* Navbar.css */
+.navbar {
+  background-color: #e1f0ff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+}
+
+.nav-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding: 0 16px;
+}
+
+.nav-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.nav-logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e40af;
+  display: block;
+}
+
+.nav-menu {
+  display: none;
+  margin-left: 24px;
+  gap: 8px;
+}
+
+.nav-link {
+  color: #1d4ed8;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #1e3a8a;
+  background-color: #bfdbfe;
+}
+
+.nav-icon {
+  margin-right: 4px;
+  font-size: 1rem;
+}
+
+.nav-user-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-user-section {
+  display: none;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-user-text {
+  font-size: 0.875rem;
+  color: #1d4ed8;
+  font-weight: 500;
+}
+
+.nav-logout {
+  color: #1d4ed8;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.nav-logout:hover {
+  color: #1e3a8a;
+  text-decoration: underline;
+}
+
+.nav-user-icon {
+  color: #1d4ed8;
+  font-size: 1.25rem;
+}
+
+.nav-auth-links {
+  display: none;
+  gap: 16px;
+}
+
+.nav-auth-link {
+  color: #1d4ed8;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav-auth-link:hover {
+  color: #1e3a8a;
+  text-decoration: underline;
+}
+
+.nav-mobile-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 6px;
+  color: #1d4ed8;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-mobile-btn:hover {
+  background-color: #bfdbfe;
+}
+
+.nav-mobile-icon {
+  font-size: 1.5rem;
+}
+
+.nav-mobile-menu {
+  display: none;
+  background-color: #f0f9ff;
+  width: 100%;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+}
+
+.nav-mobile-menu.open {
+  display: block;
+  max-height: 500px;
+  transition: max-height 0.5s ease-in;
+}
+
+.nav-mobile-content {
+  padding: 8px 0;
+}
+
+.nav-mobile-link {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  color: #1d4ed8;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.2s;
+  margin: 0 8px;
+}
+
+.nav-mobile-link:hover {
+  background-color: #bfdbfe;
+}
+
+.nav-mobile-user-section {
+  border-top: 1px solid #93c5fd;
+  padding: 16px 0;
+  margin-top: 8px;
+}
+
+.nav-mobile-user-info {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  margin-bottom: 8px;
+}
+
+.nav-mobile-user-icon {
+  color: #1d4ed8;
+  font-size: 1.25rem;
+  margin-right: 8px;
+}
+
+.nav-mobile-user-name {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #1d4ed8;
+}
+
+.nav-mobile-user-role {
+  font-size: 0.75rem;
+  color: #3b82f6;
+}
+
+.nav-mobile-logout {
+  display: block;
+  width: calc(100% - 32px);
+  text-align: left;
+  padding: 8px 16px;
+  margin: 8px 16px 0;
+  color: #1d4ed8;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.nav-mobile-logout:hover {
+  background-color: #bfdbfe;
+}
+
+.nav-mobile-auth-links {
+  padding: 8px;
+}
+
+.nav-mobile-auth-link {
+  display: block;
+  padding: 8px 16px;
+  color: #1d4ed8;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 6px;
+  margin: 4px 0;
+}
+
+.nav-mobile-auth-link:hover {
+  background-color: #bfdbfe;
+}
+
+@media (min-width: 768px) {
+  .nav-logo-text {
+    display: block;
+  }
+
+  .nav-menu {
+    display: flex;
+  }
+
+  .nav-user-section {
+    display: flex;
+  }
+
+  .nav-auth-links {
+    display: flex;
+  }
+
+  .nav-mobile-btn {
+    display: none;
+  }
+
+  .nav-mobile-menu {
+    display: none !important;
+  }
+}

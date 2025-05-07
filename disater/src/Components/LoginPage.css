@@ -1,0 +1,211 @@
+/* Container for the login page */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('/background.jpg');/* Updated path for React static serving */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    position: relative;
+  }
+  
+  /* Overlay */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+  
+  /* Card */
+  .card {
+    background-color: #dbd8e3;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Heading */
+  .heading {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  /* Form */
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  /* Error Message */
+  .error {
+    color: #d8000c;
+    background-color: #ffbaba;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  /* Form Group */
+  .form-group {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  /* Label */
+  .label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+    font-size: 16px;
+  }
+  
+  /* Input */
+  .input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input:hover {
+    border-color: #233142;
+  }
+  
+  /* Password toggle button */
+  .toggle-password {
+    margin-top: 5px;
+    background: none;
+    border: none;
+    color: #233142;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: left;
+    padding: 0;
+  }
+  
+  .toggle-password:hover {
+    color: #1a2530;
+  }
+  
+  /* Submit Button */
+  .button {
+    width: 100%;
+    padding: 10px;
+    background-color: #233142;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #1a2530;
+  }
+  
+  /* Forgot Password */
+  .forgot-password {
+    margin-top: 10px;
+    color: #233142;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+  
+  .forgot-password:hover {
+    color: #1a2530;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .card {
+      padding: 15px;
+      max-width: 300px;
+    }
+  
+    .heading {
+      font-size: 20px;
+    }
+  
+    .label {
+      font-size: 14px;
+    }
+  
+    .input {
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    .button {
+      padding: 5px;
+      font-size: 14px;
+    }
+  
+    .forgot-password {
+      font-size: 12px;
+    }
+  
+    .toggle-password {
+      font-size: 12px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .card {
+      max-width: 400px;
+    }
+  
+    .heading {
+      font-size: 28px;
+    }
+  
+    .label {
+      font-size: 18px;
+    }
+  
+    .input {
+      padding: 12px;
+      font-size: 18px;
+    }
+  
+    .button {
+      padding: 10px;
+      font-size: 18px;
+    }
+  
+    .forgot-password {
+      font-size: 16px;
+    }
+  
+    .toggle-password {
+      font-size: 16px;
+    }
+  }
+  

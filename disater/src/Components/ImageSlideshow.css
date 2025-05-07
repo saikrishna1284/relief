@@ -1,0 +1,47 @@
+/* Slideshow Container */
+.slideshow-container {
+    width: 100%;
+    max-width: 800px; /* Adjust based on your design */
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Slideshow Wrapper */
+  .slideshow {
+    display: flex;
+    transition: transform 1s ease-in-out; /* Smooth sliding animation */
+    width: 100%;
+  }
+  
+  /* Individual Slide */
+  .slide {
+    flex: 0 0 100%; /* Each slide takes full width */
+    height: 400px; /* Adjust height as needed */
+    background-size: cover;
+    background-position: center;
+    animation: zoomOut 10s infinite; /* Zoom-out animation */
+  }
+  
+  /* Zoom-out Animation */
+  @keyframes zoomOut {
+    0% {
+      transform: scale(1.1); /* Start slightly zoomed in */
+    }
+    100% {
+      transform: scale(1); /* Zoom out to normal size */
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .slide {
+      height: 300px; /* Adjust height for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .slide {
+      height: 200px; /* Adjust height for mobile screens */
+    }
+  }
